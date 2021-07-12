@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace Infraestrutura.ConfigBd
+namespace Blog.Infraestrutura.ConfigBd
 {
     public class ConexaoBd
     {
