@@ -13,6 +13,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Infraestrutura", "Blog
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestrutura", "Infraestrutura", "{FB04A798-DEB4-44EC-924D-B9AFB167C283}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Infraestrutura.Interfaces", "Blog.Infraestrutura.Interfaces\Blog.Infraestrutura.Interfaces.csproj", "{A7D80EDD-75E8-4955-8740-466E857758C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Aplicacao", "Blog.Aplicacao\Blog.Aplicacao.csproj", "{283821E2-9EB0-4778-A396-1BEF2331D86F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Aplicacao.Interfaces", "Blog.Aplicacao.Interfaces\Blog.Aplicacao.Interfaces.csproj", "{2EFF3A40-99AE-480F-97B0-0F89AC7F70D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Aplicacao.IoC", "Blog.Aplicacao.IoC\Blog.Aplicacao.IoC.csproj", "{5334EAFF-4A27-47B2-AA98-8AA94735AD9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Infraestrutura.IoC", "Blog.Infraestrutura.IoC\Blog.Infraestrutura.IoC.csproj", "{80549DE6-856C-481A-9252-6C68ABDE0EFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +41,26 @@ Global
 		{C7114346-36A8-4570-A54E-9C6C097A54CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7114346-36A8-4570-A54E-9C6C097A54CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7114346-36A8-4570-A54E-9C6C097A54CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7D80EDD-75E8-4955-8740-466E857758C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D80EDD-75E8-4955-8740-466E857758C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D80EDD-75E8-4955-8740-466E857758C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D80EDD-75E8-4955-8740-466E857758C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283821E2-9EB0-4778-A396-1BEF2331D86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283821E2-9EB0-4778-A396-1BEF2331D86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283821E2-9EB0-4778-A396-1BEF2331D86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283821E2-9EB0-4778-A396-1BEF2331D86F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EFF3A40-99AE-480F-97B0-0F89AC7F70D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EFF3A40-99AE-480F-97B0-0F89AC7F70D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EFF3A40-99AE-480F-97B0-0F89AC7F70D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EFF3A40-99AE-480F-97B0-0F89AC7F70D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5334EAFF-4A27-47B2-AA98-8AA94735AD9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5334EAFF-4A27-47B2-AA98-8AA94735AD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5334EAFF-4A27-47B2-AA98-8AA94735AD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5334EAFF-4A27-47B2-AA98-8AA94735AD9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80549DE6-856C-481A-9252-6C68ABDE0EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80549DE6-856C-481A-9252-6C68ABDE0EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80549DE6-856C-481A-9252-6C68ABDE0EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80549DE6-856C-481A-9252-6C68ABDE0EFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +68,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{09D6E03E-ED3F-4AA7-A8C1-3C6D68079560} = {7EF3B858-2D64-4A2B-B85A-C3CE7EAAA800}
 		{C7114346-36A8-4570-A54E-9C6C097A54CB} = {FB04A798-DEB4-44EC-924D-B9AFB167C283}
+		{A7D80EDD-75E8-4955-8740-466E857758C7} = {FB04A798-DEB4-44EC-924D-B9AFB167C283}
+		{283821E2-9EB0-4778-A396-1BEF2331D86F} = {7EF3B858-2D64-4A2B-B85A-C3CE7EAAA800}
+		{2EFF3A40-99AE-480F-97B0-0F89AC7F70D3} = {7EF3B858-2D64-4A2B-B85A-C3CE7EAAA800}
+		{5334EAFF-4A27-47B2-AA98-8AA94735AD9F} = {7EF3B858-2D64-4A2B-B85A-C3CE7EAAA800}
+		{80549DE6-856C-481A-9252-6C68ABDE0EFF} = {FB04A798-DEB4-44EC-924D-B9AFB167C283}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {860B5BD2-D1AA-4C61-B1FF-8979D2A545BC}

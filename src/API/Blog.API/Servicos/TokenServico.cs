@@ -1,4 +1,4 @@
-﻿using Blog.API.Models;
+﻿using Blog.Dominio.Entidades;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IdentityModel.Tokens.Jwt;

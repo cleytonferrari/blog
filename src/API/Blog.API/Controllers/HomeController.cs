@@ -1,12 +1,7 @@
-﻿using Blog.API.Models;
-using Blog.API.Repositorio;
-using Blog.API.Servicos;
+﻿using Blog.Aplicacao.Interfaces.Dominio;
+using Blog.Dominio.Entidades;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Blog.API.Controllers
@@ -15,30 +10,31 @@ namespace Blog.API.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
+       
         [HttpPost]
         [Route("login")]
         [AllowAnonymous]
         public async Task<ActionResult<dynamic>> Autenticacao([FromBody] Usuario model)
         {
             // Recupera o usuário
-            var usuario = UsuarioRepositorio.Get(model.Login, model.Senha);
+           // var usuario = UsuarioRepositorio.Get(model.Login, model.Senha);
 
             // Verifica se o usuário existe
-            if (usuario is null)
+            //if (usuario is null)
                 return NotFound(new { mensagem = "Usuário ou senha inválidos" });
 
             // Gera o Token
-            var token = TokenServico.GerarToken(usuario);
+            //var token = TokenServico.GerarToken(usuario);
 
             // Oculta a senha
-            usuario.Senha = "";
+            //usuario.Senha = "";
 
             // Retorna os dados
-            return new
-            {
-                usuario,
-                token
-            };
+          //  return new
+           // {
+                //usuario,
+                //token
+           // };
         }
 
         [HttpGet]
