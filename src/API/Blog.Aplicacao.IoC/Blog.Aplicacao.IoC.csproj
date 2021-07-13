@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blog.Aplicacao.Interfaces\Blog.Aplicacao.Interfaces.csproj" />
+    <ProjectReference Include="..\Blog.Aplicacao\Blog.Aplicacao.csproj" />
+  </ItemGroup>
+
+</Project>

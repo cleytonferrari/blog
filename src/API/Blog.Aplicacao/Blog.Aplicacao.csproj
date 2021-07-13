@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blog.Aplicacao.Interfaces\Blog.Aplicacao.Interfaces.csproj" />
+    <ProjectReference Include="..\Blog.Dominio\Blog.Dominio.csproj" />
+    <ProjectReference Include="..\Blog.Infraestrutura.Interfaces\Blog.Infraestrutura.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
